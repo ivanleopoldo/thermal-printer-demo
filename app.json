@@ -17,7 +17,17 @@
           "launchMode": "most-recent"
         }
       ],
-      "expo-web-browser"
+      [
+        "@matthewwarnes/react-native-ble-manager-plugin",
+        {
+          "isBackgroundEnabled": true,
+          "modes": ["peripheral", "central"],
+          "bluetoothAlwaysPermission": "Allow $(PRODUCT_NAME) to connect to bluetooth devices",
+          "bluetoothPeripheralPermission": "Allow $(PRODUCT_NAME) to connect to bluetooth devices"
+        }
+      ],
+      "expo-web-browser",
+      "react-native-ble-manager"
     ],
     "experiments": {
       "typedRoutes": true,
@@ -31,14 +41,21 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ivaintwc.thermalprinterdemo"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.ivaintwc.thermalprinterdemo"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "6857ad0f-8187-4333-92b0-8736e9651350"
       }
     }
   }
