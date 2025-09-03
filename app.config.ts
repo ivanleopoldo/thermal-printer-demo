@@ -98,8 +98,8 @@ export const getDynamicAppConfig = (environment: 'development' | 'preview' | 'pr
       name: `${APP_NAME} (Preview)`,
       bundleIdentifier: `${BUNDLE_IDENTIFIER}.preview`,
       packageName: `${PACKAGE_NAME}.preview`,
-      icon: './assets/images/icons/iOS-Prev.png',
-      adaptiveIcon: './assets/images/icons/Android-Prev.png',
+      icon: ICON,
+      adaptiveIcon: ADAPTIVE_ICON,
       scheme: `${SCHEME}-prev`,
     };
   }
@@ -108,8 +108,8 @@ export const getDynamicAppConfig = (environment: 'development' | 'preview' | 'pr
     name: `${APP_NAME} (Dev)`,
     bundleIdentifier: `${BUNDLE_IDENTIFIER}.dev`,
     packageName: `${PACKAGE_NAME}.dev`,
-    icon: './assets/images/icons/iOS-Dev.png',
-    adaptiveIcon: './assets/images/icons/Android-Dev.png',
+    icon: ICON,
+    adaptiveIcon: ADAPTIVE_ICON,
     scheme: `${SCHEME}-dev`,
   };
 };

@@ -7,6 +7,7 @@ export default function TabLayout() {
         tabBarActiveTintColor: 'black',
       }}>
       <Tabs.Screen name="index" />
+      <Tabs.Screen name="settings" />
     </Tabs>
   );
 }
